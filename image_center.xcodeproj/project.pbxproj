@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9346002AA0623E782C02E80B /* common.mm in Sources */ = {isa = PBXBuildFile; fileRef = 93460AF1E8128DA3D5D7555F /* common.mm */; };
+		934600877D91265399A9519F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9346010D1A511C3BA9FED96E /* Main.storyboard */; };
+		9346014D23CE77CBC434DD10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93460F0D477562B2046ED17A /* SceneDelegate.swift */; };
+		934604B73D21999E8986A445 /* ImageCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93460EBB6474A1FC978D1116 /* ImageCenterViewController.swift */; };
+		9346056C4C40D430ADC7D2F3 /* ImageProcessingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934605E0D31CB8FC9323B187 /* ImageProcessingService.swift */; };
+		934605C363A5ACFEA4840CC5 /* Chan.mm in Sources */ = {isa = PBXBuildFile; fileRef = 93460A4294BD6E4B1281A6A5 /* Chan.mm */; };
+		9346078F5692CCBCB58A7AC3 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93460512D3A43073D075A3BF /* opencv2.framework */; };
+		9346083FB5F63E0CF96A2C8C /* OpenCVCommon.mm in Sources */ = {isa = PBXBuildFile; fileRef = 934609B3210A435C2057C1AC /* OpenCVCommon.mm */; };
+		93460844610A5540F91D285E /* Kirk.mm in Sources */ = {isa = PBXBuildFile; fileRef = 93460BCDFE14106F9FC94877 /* Kirk.mm */; };
+		9346096112AC1E06031992AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 934603F6116AB715DC0FD83F /* Assets.xcassets */; };
+		93460C5801C1724E8F4B377F /* ImageCenterFinder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9346035885B2C11729B43330 /* ImageCenterFinder.mm */; };
+		93460ECEFF452F2FECEB3A8D /* CameraMovementChecker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 934602EB821BA9C593B3CCCA /* CameraMovementChecker.mm */; };
+		93460F4571F25FAB7A52BBEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 934605F8896C651B57EBBC9B /* LaunchScreen.storyboard */; };
+		93460FA880E6DCD71848D2C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9346008E3B49C4381F50CC75 /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9346008E3B49C4381F50CC75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		93460130133CA8D347804EA9 /* Chan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Chan.h; path = "Convex Hull/Chan.h"; sourceTree = "<group>"; };
+		934602EB821BA9C593B3CCCA /* CameraMovementChecker.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CameraMovementChecker.mm; sourceTree = "<group>"; };
+		9346035885B2C11729B43330 /* ImageCenterFinder.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = ImageCenterFinder.mm; sourceTree = "<group>"; };
+		934603F6116AB715DC0FD83F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93460512D3A43073D075A3BF /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = "/Users/vladimirkostin/Developer/opencv-master/ios/opencv2.framework"; sourceTree = "<absolute>"; };
+		93460544650B813E9A3B1ACA /* ImageCenterBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCenterBridgingHeader.h; sourceTree = "<group>"; };
+		934605E0D31CB8FC9323B187 /* ImageProcessingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageProcessingService.swift; path = Services/ImageProcessingService.swift; sourceTree = "<group>"; };
+		9346093A88A4DB0F604A643E /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = common.h; path = "Convex Hull/common.h"; sourceTree = "<group>"; };
+		934609B3210A435C2057C1AC /* OpenCVCommon.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVCommon.mm; sourceTree = "<group>"; };
+		93460A4294BD6E4B1281A6A5 /* Chan.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Chan.mm; path = "Convex Hull/Chan.mm"; sourceTree = "<group>"; };
+		93460A7CAAD8171EA0EEC11B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93460AF1E8128DA3D5D7555F /* common.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = common.mm; path = "Convex Hull/common.mm"; sourceTree = "<group>"; };
+		93460B6C80AFB2A1021EB29D /* ImageCenterFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCenterFinder.h; sourceTree = "<group>"; };
+		93460BCDFE14106F9FC94877 /* Kirk.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Kirk.mm; path = "Convex Hull/Kirk.mm"; sourceTree = "<group>"; };
+		93460C54AAEF5D882035B727 /* OpenCVCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVCommon.h; sourceTree = "<group>"; };
+		93460C9509DEC4C647EDD87D /* ImageCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93460CA43BAF2B21A850A8E1 /* Kirk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Kirk.h; path = "Convex Hull/Kirk.h"; sourceTree = "<group>"; };
+		93460D064FE84F1E84875828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		93460D078A82EAC37C418139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		93460E663190EC2777EA9F36 /* CameraMovementChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraMovementChecker.h; sourceTree = "<group>"; };
+		93460EBB6474A1FC978D1116 /* ImageCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCenterViewController.swift; sourceTree = "<group>"; };
+		93460F0D477562B2046ED17A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		934606F42A825DD6ADEF5A5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9346078F5692CCBCB58A7AC3 /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		779F1A8D244D216600252D55 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				93460EBB6474A1FC978D1116 /* ImageCenterViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		77E287712453707200E3B280 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				934605F8896C651B57EBBC9B /* LaunchScreen.storyboard */,
+				9346010D1A511C3BA9FED96E /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		9346073C7BE4449F27E1B260 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				93460B6C80AFB2A1021EB29D /* ImageCenterFinder.h */,
+				9346035885B2C11729B43330 /* ImageCenterFinder.mm */,
+				93460544650B813E9A3B1ACA /* ImageCenterBridgingHeader.h */,
+				93460A4294BD6E4B1281A6A5 /* Chan.mm */,
+				93460130133CA8D347804EA9 /* Chan.h */,
+				9346093A88A4DB0F604A643E /* common.h */,
+				93460BCDFE14106F9FC94877 /* Kirk.mm */,
+				93460CA43BAF2B21A850A8E1 /* Kirk.h */,
+				93460AF1E8128DA3D5D7555F /* common.mm */,
+				934602EB821BA9C593B3CCCA /* CameraMovementChecker.mm */,
+				93460E663190EC2777EA9F36 /* CameraMovementChecker.h */,
+				934609B3210A435C2057C1AC /* OpenCVCommon.mm */,
+				93460C54AAEF5D882035B727 /* OpenCVCommon.h */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		93460961DD5EE14274EE57B2 = {
+			isa = PBXGroup;
+			children = (
+				93460ACD69AE627669224E6D /* Products */,
+				93460E8EDBD4BE3CDB2353D6 /* image_center */,
+				93460EAE2EEB16A8CA4C2EDF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		93460ACD69AE627669224E6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93460C9509DEC4C647EDD87D /* ImageCenter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93460E8EDBD4BE3CDB2353D6 /* image_center */ = {
+			isa = PBXGroup;
+			children = (
+				93460D078A82EAC37C418139 /* Info.plist */,
+				934603F6116AB715DC0FD83F /* Assets.xcassets */,
+				77E287712453707200E3B280 /* StoryBoards */,
+				9346008E3B49C4381F50CC75 /* AppDelegate.swift */,
+				93460F0D477562B2046ED17A /* SceneDelegate.swift */,
+				779F1A8D244D216600252D55 /* ViewControllers */,
+				9346073C7BE4449F27E1B260 /* Library */,
+				934605E0D31CB8FC9323B187 /* ImageProcessingService.swift */,
+			);
+			path = image_center;
+			sourceTree = "<group>";
+		};
+		93460EAE2EEB16A8CA4C2EDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93460512D3A43073D075A3BF /* opencv2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9346026F84EDAACB286A261A /* image_center */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93460E93F57787295A42B7CC /* Build configuration list for PBXNativeTarget "image_center" */;
+			buildPhases = (
+				934605F8D107726EDEB1E6B2 /* Sources */,
+				934606F42A825DD6ADEF5A5C /* Frameworks */,
+				9346025ED632D4857E5DB77A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = image_center;
+			productName = image_center;
+			productReference = 93460C9509DEC4C647EDD87D /* ImageCenter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		934601D4F822D244E3087B13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = kostin;
+				TargetAttributes = {
+					9346026F84EDAACB286A261A = {
+						DevelopmentTeam = 3A735CS3NG;
+					};
+				};
+			};
+			buildConfigurationList = 93460F09C9CF9E0C7EE0C9B5 /* Build configuration list for PBXProject "image_center" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 93460961DD5EE14274EE57B2;
+			productRefGroup = 93460ACD69AE627669224E6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9346026F84EDAACB286A261A /* image_center */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9346025ED632D4857E5DB77A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9346096112AC1E06031992AC /* Assets.xcassets in Resources */,
+				93460F4571F25FAB7A52BBEC /* LaunchScreen.storyboard in Resources */,
+				934600877D91265399A9519F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		934605F8D107726EDEB1E6B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93460FA880E6DCD71848D2C1 /* AppDelegate.swift in Sources */,
+				9346014D23CE77CBC434DD10 /* SceneDelegate.swift in Sources */,
+				934604B73D21999E8986A445 /* ImageCenterViewController.swift in Sources */,
+				93460C5801C1724E8F4B377F /* ImageCenterFinder.mm in Sources */,
+				9346056C4C40D430ADC7D2F3 /* ImageProcessingService.swift in Sources */,
+				934605C363A5ACFEA4840CC5 /* Chan.mm in Sources */,
+				93460844610A5540F91D285E /* Kirk.mm in Sources */,
+				9346002AA0623E782C02E80B /* common.mm in Sources */,
+				93460ECEFF452F2FECEB3A8D /* CameraMovementChecker.mm in Sources */,
+				9346083FB5F63E0CF96A2C8C /* OpenCVCommon.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9346010D1A511C3BA9FED96E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93460D064FE84F1E84875828 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		934605F8896C651B57EBBC9B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93460A7CAAD8171EA0EEC11B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93460135C665CFF45B1972C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3A735CS3NG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"${PROJECT_DIR}/..\"/**",
+					"\"${PROJECT_DIR}/../opencv-master/ios\"/**",
+				);
+				GCC_VERSION = "";
+				INFOPLIST_FILE = image_center/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.kostin.image-center";
+				PRODUCT_NAME = ImageCenter;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = image_center/Library/ImageCenterBridgingHeader.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		934601872E0B0F691CB9E470 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s arm64e arm64";
+			};
+			name = Release;
+		};
+		9346051D58CC3A9A351D9B6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALIDATE_PRODUCT = NO;
+				VALID_ARCHS = "armv7 armv7s arm64e arm64";
+			};
+			name = Debug;
+		};
+		93460575A114FB0E04F6ED18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3A735CS3NG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"${PROJECT_DIR}/..\"/**",
+					"\"${PROJECT_DIR}/../opencv-master/ios\"/**",
+				);
+				GCC_VERSION = "";
+				INFOPLIST_FILE = image_center/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.kostin.image-center";
+				PRODUCT_NAME = ImageCenter;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = image_center/Library/ImageCenterBridgingHeader.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93460E93F57787295A42B7CC /* Build configuration list for PBXNativeTarget "image_center" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93460575A114FB0E04F6ED18 /* Debug */,
+				93460135C665CFF45B1972C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93460F09C9CF9E0C7EE0C9B5 /* Build configuration list for PBXProject "image_center" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9346051D58CC3A9A351D9B6A /* Debug */,
+				934601872E0B0F691CB9E470 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 934601D4F822D244E3087B13 /* Project object */;
+}
